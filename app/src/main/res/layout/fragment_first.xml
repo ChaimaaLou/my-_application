@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="187dp"
-        android:layout_height="30dp"
-        android:background="@color/teal_200"
-        android:shadowRadius="@integer/material_motion_duration_long_1"
-        android:text="@string/exp"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+
+    //MAP
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mapbox_cameraTargetLat="40.7128"
+        app:mapbox_cameraTargetLng="-74.0060"
+        app:mapbox_cameraZoom="9.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="160dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/teal_200"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:text="@string/exp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <Spinner
+            android:id="@+id/parcelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="32dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"
+            android:background="#99FFFFFF"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/parcelle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="32dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="40dp"
+            android:background="#99FFFFFF"
+            android:textColor="@color/black"/>
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
 
     <Button
         android:id="@+id/button_first"
-        android:layout_width="101dp"
+        android:layout_width="111dp"
+        android:layout_height="90dp"
         android:backgroundTint="#99FFFFFF"
-        android:layout_height="77dp"
         android:drawableTop="@drawable/ic_logo"
         android:text="@string/next"
         android:textColor="@color/black"
@@ -40,4 +72,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/second"
+        android:layout_width="111dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#99FFFFFF"
+        android:text="Modifier une parcelle"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

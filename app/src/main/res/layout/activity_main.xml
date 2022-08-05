@@ -9,19 +9,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     >
 
-    //MAP
-    <com.mapbox.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:mapbox_cameraTargetLat="40.7128"
-        app:mapbox_cameraTargetLng="-74.0060"
-        app:mapbox_cameraZoom="9.0"
-        >
 
-
-
-    </com.mapbox.maps.MapView>
 
     <fragment
         android:id="@+id/nav_host_fragment_content_main"

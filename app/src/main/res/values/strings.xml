@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="exp">My farms</string>
+    <string name="exp">Mes exploitations</string>
 
     <!-- Strings used for map -->
     <string name="mapbox_access_token">pk.eyJ1IjoiY2hhaS1sb3UiLCJhIjoiY2w1ODFnYTdsMXlqYjNkcHBwYnZlcDhhdiJ9.23AzZxkyAXTO9Wk0OsUr3Q</string>
@@ -11,9 +11,9 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="third_fragment_label">Third Fragment</string>
-    <string name="next">Add a plot</string>
-    <string name="start">Start</string>
-    <string name="draw">Place the point</string>
+    <string name="next">Ajouter une parcelle</string>
+    <string name="start">Démarer</string>
+    <string name="draw">Placer le point</string>
 
     <!-- bottom sheet -->
     <string name="btn_persistent">Persistent Bottom Sheet</string>
@@ -27,5 +27,11 @@
     <string name="btn_one">Button 1</string>
     <string name="btn_two">Button 2</string>
     <string name="btn_three">Button 3</string>
+    <string name="recommencer">Recommencer</string>
+    <string name="valider">Valider</string>
+    <string name="dateSemis">Date de semis</string>
+    <string name="saison">Saison</string>
+    <string name="duree">Durée de cycle</string>
+    <string name="modification_parcelle">Modification Parcelle</string>
 
 </resources>
